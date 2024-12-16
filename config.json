@@ -1,0 +1,33 @@
+{
+	"ProxyRotator": {
+		"Port": "3080"
+	},
+	"Inject": {
+		"Enable": true,
+		"Type": 2,
+		"Port": "8989",
+		"Rules": {
+			"akamai.net:80": [
+				"125.235.36.177"
+			]
+		},
+		"Payload": "[[netData][crlf*2]",
+		"ServerNameIndication": "",
+		"MeekType": 0,
+		"Timeout": 5,
+		"ShowLog": false
+	},
+	"PsiphonCore": 12,
+	"Psiphon": {
+		"CoreName": "core",
+		"Tunnel": 1,
+		"Region": "JP",
+		"Protocols": [
+			"FRONTED-MEEK-HTTP-OSSH",
+			"FRONTED-MEEK-OSSH"
+		],
+		"TunnelWorkers": 6,
+		"KuotaDataLimit": 0,
+		"Authorizations": ["eyJBdXRob3JpemF0aW9uIjp7IklEIjoicEcrbWFMTmhpTDhyNjlocEk1YnpxYnl3Mld2ZmJ4dThZV25vMklTczVhRT0iLCJBY2Nlc3NUeXBlIjoiZ29vZ2xlLXN1YnNjcmlwdGlvbiIsIkV4cGlyZXMiOiIyMDI0LTEyLTA5VDEzOjUzOjE5WiJ9LCJTaWduaW5nS2V5SUQiOiJSY1g1K0pBZVVPam9XY0hvajQ1NjhYc1ZsQWJzMFFhc0FqKzFBRDYrbndRPSIsIlNpZ25hdHVyZSI6ImFUcFJwSGJrOExPZEVEQU5jYkZWUWw2SjgzVGhlUTVDNm11cDZjMzVEU1hkZy9CYWIwdVVlTmhwcFlZSkttNko1dmVQUjdJY2M2Ty8wWjVYT0hzakR3PT0ifQ=="]
+	}
+}
